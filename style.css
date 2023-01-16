@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier Prime', monospace;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    background-color: rgba(12, 12, 12, 0.932);
+}
+
+.modal-noOption {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0, 0.8);
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.modal-noOption .box {
+    border: 1px solid rgb(59, 165, 93);
+    padding: 50px;
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    background-color: black;
+    border-radius: 15px;
+}
+
+.modal-noOption .box div {
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    
+}
+
+.modal-noOption .box button {
+    position: relative;
+    border: transparent;
+    width: 170px;
+    height: 40px;
+    background-color: rgb(59, 165, 93);
+    box-shadow: 0px 3px 0px rgb(26, 70, 40);
+    cursor: pointer;
+}
+
+.modal-noOption .box button:active {
+    top: 3px;
+    box-shadow: none;
+}
+
+.range-char {
+    width: 550px;
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+
+}
+
+.range-char .title {
+    width: 250px;
+    color: white;
+}
+
+.range-char .number {
+    color: white;
+    width: 5px;
+
+}
+
+.range-style {
+    -webkit-appearance: none;
+    background: #d3d3d3;
+    outline: none;
+    width: 250px;
+    height: 20px;
+    border-radius: 9px;   
+}
+
+.range-style::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: rgb(59, 165, 93);
+    cursor: pointer;
+}
+
+.copied {
+    position: absolute;
+    color: white;
+    bottom: 610px;
+    opacity: 0;
+}
+
+.input-res {
+    width: 400px;
+    height: 50px;
+    display: flex;
+    border: 1px solid white;
+    border-radius: 15px;
+    justify-content: center;
+    color: rgb(59, 165, 93);
+}
+
+.input-res .res {
+    width: 400px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    font-size: 30px;
+}
+
+.input-res .copy {
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.copy img {
+    height: 25px;
+    cursor: pointer;
+
+}
+
+.sec-options {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    width: 400px;
+    height: 350px;
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 3px rgb(59, 165, 93);
+
+}
+
+.sec-options .options {
+    align-self: flex-start;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cb-style {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.sec-options input[type=checkbox] {
+    all: unset;
+    border: 1px solid white;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.sec-options input[type=checkbox]:checked {
+    background-color: rgb(59, 165, 93);
+
+}
+
+.sec-options button {
+    position: relative;
+    top: 20px;
+    height: 80px;
+    width: 200px;
+    font-size: 40px;
+    background-color: rgb(59, 165, 93);
+    border: transparent;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+}
+
+.sec-options button:hover {
+    background-color: rgb(240, 238, 238);
+    color:rgb(59, 165, 93);
+}
+
+.lower, .upper, .number, .simbol {
+    display: flex;
+
+}
+
+.descrition {
+    position: relative;
+    bottom: 2px;
+}

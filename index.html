@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senha Aleatoria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="modal-noOption" id="modal-noOption">
+        <div class="box">
+            <div>Primeiro adicione uma opção</div>
+            <button onclick="disableModalOption()">OK</button>
+        </div>
+    </section>
+    <div class="copied" id="copied">Copiado para a área de transferência!</div>
+    <section class="input-res">
+        <div class="res" id="res">A SENHA APARECE AQUI</div> 
+        <div class="copy" title="Copiar senha">
+            <img src="copiarecolar.png" title="Copiar senha" onclick="CopiarSenha()">
+        </div>
+</section>  
+
+    <section class="range-char">
+        <div class="title">Números de Caracteres:</div>
+        <input type="range" name="number-char" id="number-char" class="range-style" min="8" max="20" value="0">
+        <div id="number" class="number" >8</div>
+    </section>
+  
+
+    <section class="sec-options">
+        <div class="options">
+
+            <div class="upper"><input type="checkbox" name="Check" class="cb-style" id="checkupper" >
+            <div class="descrition">
+                Letras Maiúsculas
+            </div>
+            </div>
+
+            <div class="lower"><input type="checkbox" name="Check" class="cb-style" id="checklower">
+            <div class="descrition">
+                Letras Minúscula
+            </div>
+            </div>  
+
+            <div class="number"> <input type="checkbox" name="Check" class="cb-style" id="checknumber">
+            <div class="descrition">
+                Números
+            </div>
+            </div>
+
+            <div class="simbol"><input type="checkbox" name="Check" class="cb-style" id="checksimbol">
+            <div class="descrition">
+                Simbolos
+            </div>   
+            </div>
+
+        </div>
+        <button onclick="gerarSenha()">GERAR</button>
+    </section>
+
+    <script src="geradordesenha.js"></script>
+</body>
+</html>
